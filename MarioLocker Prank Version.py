@@ -51,9 +51,9 @@ def trigger_fake_bsod():
 
 # Function to play Mario's Yahoo! sound and pipe warp sound
 def play_mario_sounds():
-    subprocess.run(['powershell', '-c', 'Add-Type -TypeDefinition "using System.Media; public class Sound { public static void Play(string path) { SoundPlayer player = new SoundPlayer(path); player.PlaySync(); } }"; Sound::Play("path_to_your_mario_yahoo.wav")'])
+    subprocess.run(['powershell', '-c', 'Add-Type -TypeDefinition "using System.Media; public class Sound { public static void Play(string path) { SoundPlayer player = new SoundPlayer(path); player.PlaySync(); } }"; Sound::Play("Mario-Yahoo-djlunatique.com_")'])
     time.sleep(1)
-    subprocess.run(['powershell', '-c', 'Add-Type -TypeDefinition "using System.Media; public class Sound { public static void Play(string path) { SoundPlayer player = new SoundPlayer(path); player.PlaySync(); } }"; Sound::Play("path_to_your_pipe_warp.wav")'])
+    subprocess.run(['powershell', '-c', 'Add-Type -TypeDefinition "using System.Media; public class Sound { public static void Play(string path) { SoundPlayer player = new SoundPlayer(path); player.PlaySync(); } }"; Sound::Play("smb_pipe.wav")'])
 
 # Function to open file explorer and simulate file search
 def open_file_explorer_and_search(file_name="Im OnLY HeRE To PlaY"):
@@ -100,7 +100,7 @@ def run_sequence():
 
     # Step 2: Show Zalgo Message "I'M HeRE"
     if exit_flag: return
-    show_zalgo_message("I'M HeRE", 2)
+    show_message("Í̸̢̨̲̦̱͎̤̘̒̇̒́̓̂̔̕͜m̶̨̡̧̛̼͇͇̪̞͈͈̫̾͌̈́̀̓̌̃̾̄͂̑ ̴̦̼̼͇̬̠̳͊͆͑̈́̈̎̿̉͋ͅḨ̴̢̛͓͙̱̥̮̞̘͆͌̀͐̈̔ę̴̨̡̛̪̻̣͈͈̗͍̌̑͆̋̐̓̑̄͐̍͘R̷̝̘̍Ȇ̶͉̮̼̄͋̿͆̇̑̃̈", 2)
     time.sleep(2)
 
     # Step 3: Mario Image pops up
@@ -109,7 +109,7 @@ def run_sequence():
 
     # Step 4: Zalgo Message "I HaVE YOUr COmpUTEr"
     if exit_flag: return
-    show_zalgo_message("I HaVE YOUr COmpUTEr", 3)
+    show_zalgo_message("Ĭ̸̛̮̲̭̇̐͐̿̇̄̆̀͐̊̈̚ͅ ̶̛͕̈́̒̉̓̂̃͆͘͝Ĥ̶̢̞̺̗̠̝̗͇̿̿ą̷̨̱͈̦̺̠̙̞͓̳̒͋͌̂̐ͅṼ̷̦͙̥̘̩̙̘̍͒͒E̷̘̹̪͖͖̼̝͎̟̼͂ ̸̛̠̙̬̞̯̲͈͕̀̈͋̑͊̀̇͘͝͝Y̵̧̛͎̫̬̪̟̣͈̤̰̙̭̖̝̝͂̀̚Ǫ̷̧̤̦͕͌͌̏͒͊̕ͅU̴̢̢̥̱̤͎̤̼̠͓̰͙͆̀̒͋̃̎͘ͅŗ̴̛͖͔̽̔̈̾͐̂͒̇̒͜ ̴̨͚͖͉̭̃͐̇̇̒̾C̶̛̥͉̝̪͙̭͔̬̓̋͑́̅̆͋͊̾̎͐̅̚͘ͅO̸̧̺͖̜̣̟͉̣̲̪͎̜͔͠m̷̡̨̡̛͎̫̱͈͙̲̠̱̤̘̂̀̃̃͒̽p̶̲͙͎͇̈́͑̍̃͗̂̏̐̀͋Ṳ̸̡̯̹̙̞̹̖́̈́̇T̸̜̣̳̠̲̀͑̅̏͝Ẹ̵̡͎̜̠̘͎̗̐̈́̊͊́̈ͅŗ̷̣͕͎̼̙͕̀̔͒͛͊̌̒̄͆́̋̀̈́͜͠", 3)
     time.sleep(3)
 
     # Step 5: Ask user to find file
@@ -120,16 +120,16 @@ def run_sequence():
         # If file is not found, trigger BSOD
         if exit_flag: return
         trigger_fake_bsod()
-        show_zalgo_message("I KneW YoU WeRENt GoOD EnOUgH", 2)
+        show_zalgo_message("I̵̧̨̹͖̼̹̥̤̲̮̬̍͜ ̵̢̛̛̰̠̠͎̫͕̺͂͑͌̽̏̇͒͋̋̚͜͜Ķ̴̡̮̮̖͕̥̙̼̣̉̋̌̋̐̆̌̂̒̓̚͠ǹ̷͉̫̯̎̍̈́̈̔̃̎è̴̬̰͆W̴̻̩̳̙͎̗̜̼̝̳͒̊͛ ̴̡̘̯̭͍̠̖̈̅̃͋͒͜ͅŸ̶̳̝͓͚͙̹̥͓̞̹̣͔́̈́ó̶̥͂̋̇̾̓͊̃̑͌Ủ̴̘̠͕̤̭̖͚̯̘̦͔̘͉̘̭͝ ̷̡̦͍̥͙̅̏̽̈̓͝W̷̧͓̬̝̳͐͐̎e̷̛̟̊̅̾̂̔̕͝Ŗ̵͔̝͆̾͂̽ͅE̷̢͚̬̪̬͛̅̎̀̾͒̽̌̀̐̀͆̆Ṅ̵̢̮̩̥̜̲̀̄̃̈́̊͋̓̄̑̕̕͝t̷̩̱̥͎͖͉̲̥̤̘̲͎̞͌͂́̒͊͊̆͊͂͒̕͝͠͝ ̶̡̡̛͉̘̯̩̩͔͍̫̯̝̥̉̅́͐̑͛͑̈́̆͝͝͠G̶̡̲̲̼͉̻͇̃͋́͘͜o̸̧̮͎͈͕̘̱̞͉̠̹̲̜̎̓̾͋͊̃̽͂͗͘ͅͅÓ̴͚̯̻̣͛D̷̺̫̍ ̴̙͕͈̟̟͇͉̝̞̜̤̭̳̪̐ͅE̴̮̟̯͉̰͐̆̋͝n̷̢̨̟͖̗̩̹̯͍̥̍͛̊̔̍̃̀ͅO̷͚̰̳̓́̿̂̂̎͌̅͊̋U̴̺͚̗͈̅̐̆̐̓͊́̅͝g̸͕͌͠͠͝Ḩ̶̢͚̥͎͎̦͉͉̽", 2)
     else:
         # If file found, proceed to Mario Game
         if exit_flag: return
-        show_zalgo_message("BeAT Me", 1)
+        show_zalgo_message("B̷̨̩̭͖̙̙̗̜͒̌͐̅̀͌̓́̋̊̍̂͝ͅͅe̶̛̙̠̥͇̹̲͎͚̖̅̄͊̐̉̍̋̉̇̒̇͆̒͗Ạ̵͔̘̙̝̮͇͒̑͆̏̃͂̿̐͆̚̕͠͝T̵̢̖̹̻͍̱͔̦͍̭̲̯͙̩̍̿̾̔ ̷̨͓̗͖̲̼͕̜͔͖̮̞̙̘͚̈̈́̔̀̓̔͝͝M̷̫̰̞͖̰̲̠̦͈̯̤̬̗̅̊͑͊͂͑̈́̇̈̚͜͜͝͝ę̶̧̹̺̬̺̙̺̫̏̏ͅͅ", 1)
         start_mario_game()
 
         # Step 6: Run Minesweeper with Zalgo Message
         if exit_flag: return
-        show_zalgo_message("DoNT BloW UP", 1)
+        show_zalgo_message("D̶̮͚̘̜̥̘̻̏̾̏̈͋̄̈̆͆̂̓̄̚͘ͅo̵̡͖̺̰̗͚͍̞͍̘͒̃̀̈͒̔̇͒N̷̢͔̳̞̳̬̠̪̖̩̪̒̿̌̈́̉͂͐͐̂͘ͅT̷̡̟̘͈̲̜̖͓̬͐̇̑̓̿̓̆̊̎̈́̑̕̕͜͝ͅ ̴̲̟̠̏̀͑̅̾̾B̵̧͓̲̙̝̜̙̟̲̺̲̲̖̣̂́͗̅̍͐̊͘͝ͅl̶̡̙̪͙͐̈́͝ͅo̶̢̥̟̔̃͐̑͆̒̄͛͋̿͘͘̚͠͠W̶̢̢̥̤̼̤̺̮̯̪̿͠ ̴̖̬̥͍͂̑̓̓̀U̷̯̼̜̪̮͎̜̝͇̝̪͖͇͆͆͗̐̀̏̀̈́͋̃̂̊͝P̴̨̡̭̖̝͍̣͇̗̬̣͇̩̝̾̉̿̊", 1)
         start_minesweeper_game()
 
         time.sleep(30)  # Simulate Minesweeper time
@@ -141,7 +141,7 @@ def run_sequence():
 
     # Final Step: Show peace message and return to desktop
     if exit_flag: return
-    show_zalgo_message("FinALLY PEaCE", 2)
+    show_zalgo_message("F̴̹̆̉́͘͜ï̵̡̓̋̒̋͋͒͋̿̈̃̒͘ņ̷̡̛̟̹̲̯̲͊̅͊̏̕͠Ą̵̧̲̤̺͇̠̱̒̑̊̍̈́͑̓͌͗͑̊͝L̵̨̠͖͕̜̎͗͌͝͝L̸̜̱̹͎̥̹͓̰̖̒̓͌͌̅͂̈́̏͂͊̐̚̚Y̶̨̜̮̺̞̩̫̟͊̒̃͒̎̀͑̉͑̿̂ͅ ̸̹͚̘͚̪̩̑́̽̿̇͠͝P̶̮̻̳̞̱̘̪̣̭̩͖̥͈̿̈͊̒̏̓̿̿͠͝ͅÈ̶̡̯͙͓̭͈̥͈͖͎͙̦̼̦̆́͒͗̏̔̍̎̎͊ͅǎ̵̦̲̺̰̃̚Ċ̴͈̳̰͔̺͚̜̅̊̽̈͛͛͆̒̚Ë̷̛̬̮̖̩̼̠̼̳͇̤͖͔̣́̃̀̊͛̓̉͝͠", 2)
     time.sleep(2)
     return_to_desktop()
 
